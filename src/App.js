@@ -1,26 +1,43 @@
-import './styles/App.css';
+// LIBRARY IMPORTS
 import { Parallax } from 'react-parallax';
+
+
+// IMAGE IMPORTS
 import beach from './images/beach.jpg'
 import daytrade from './images/daytrade.jpg'
 import ready from './images/ready.jpg'
+
+// COMPONENT IMPORTS
+import Navbar from './components/Navbar';
+import LandingPage from './components/LandingPage';
+
+// CSS IMPORTS
+import './styles/App.css';
 
 function App() {
   return (
     <div className="App">
 
+      <head>
+        <title> Selam Beyene - Software Engineer</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+      </head>
+
+      <Navbar />
+
 {/* LANDING */}
-      <Parallax strength={200} bgImage={beach}>
+      <Parallax strength={200} bgImage={daytrade}>
         <div className='content'>
-          <div className='text-content'>
-            Normal Parallax
+          <div className='landing'>
+            <LandingPage />
           </div>
         </div>
       </Parallax>
 
 {/* ABOUT ME */}
-      <Parallax strength={600} bgImage={daytrade}>
+      <Parallax strength={600} bgImage={beach}>
         <div className='content'>
-          <div className='text-content'>
+          <div className='about'>
             Blur Parallax
           </div>
         </div>
@@ -29,7 +46,7 @@ function App() {
 {/* SKILLS */}
       <Parallax strength={-200} bgImage={ready}>
         <div className='content'>
-          <div className='text-content'>
+          <div className='skills'>
             Reverse Parallax
           </div>
         </div>
@@ -37,7 +54,7 @@ function App() {
 
 {/* Projects */}
       <Parallax strength={200} bgImage={ready}>
-        <div className='content'>
+        <div className='projects'>
           <div className='text-content'>
             Reverse Parallax
           </div>
