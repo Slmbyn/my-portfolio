@@ -11,6 +11,7 @@ import ready from './images/ready.jpg'
 import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
 import AboutMe from './components/AboutMe';
+import Skills from './components/Skills';
 
 // CSS IMPORTS
 import './styles/App.css';
@@ -48,15 +49,15 @@ function App() {
       <Parallax strength={-200} bgImage={ready}>
         <div className='content'>
           <div className='skills'>
-            Reverse Parallax
+            <Skills />
           </div>
         </div>
       </Parallax>
 
 {/* Projects */}
       <Parallax strength={200} bgImage={ready}>
-        <div className='projects'>
-          <div className='text-content'>
+        <div className='content'>
+          <div className='projects'>
             Reverse Parallax
           </div>
         </div>
