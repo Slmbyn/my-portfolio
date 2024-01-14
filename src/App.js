@@ -1,23 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import { Parallax } from 'react-parallax';
+import beach from './images/beach.jpg'
+import daytrade from './images/daytrade.jpg'
+import ready from './images/ready.jpg'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+{/* LANDING */}
+      <Parallax strength={200} bgImage={beach}>
+        <div className='content'>
+          <div className='text-content'>
+            Normal Parallax
+          </div>
+        </div>
+      </Parallax>
+
+{/* ABOUT ME */}
+      <Parallax strength={600} bgImage={daytrade}>
+        <div className='content'>
+          <div className='text-content'>
+            Blur Parallax
+          </div>
+        </div>
+      </Parallax>
+
+{/* SKILLS */}
+      <Parallax strength={-200} bgImage={ready}>
+        <div className='content'>
+          <div className='text-content'>
+            Reverse Parallax
+          </div>
+        </div>
+      </Parallax>
+
+{/* Projects */}
+      <Parallax strength={200} bgImage={ready}>
+        <div className='content'>
+          <div className='text-content'>
+            Reverse Parallax
+          </div>
+        </div>
+      </Parallax>
+
     </div>
   );
 }
