@@ -1,6 +1,6 @@
 // LIBRARY IMPORTS
 import { Parallax } from 'react-parallax';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // IMAGE IMPORTS
 import beach from './images/beach.jpg'
@@ -12,6 +12,7 @@ import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
 
 // CSS IMPORTS
 import './styles/App.css';
@@ -19,11 +20,6 @@ import './styles/App.css';
 function App() {
   return (
     <div className="App">
-
-      <head>
-        <title> Selam Beyene - Software Engineer</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-      </head>
 
       <Navbar />
 
@@ -58,7 +54,7 @@ function App() {
       <Parallax strength={200} bgImage={ready}>
         <div className='content'>
           <div className='projects'>
-            Reverse Parallax
+            <Projects />
           </div>
         </div>
       </Parallax>

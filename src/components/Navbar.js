@@ -7,7 +7,7 @@ export default function CustomNavbar() {
   return (
     <Navbar bg="dark" variant="dark" expand="md" sticky="top">
       <Container>
-        <Navbar.Brand as={ScrollLink} to='landing'>
+        <Navbar.Brand as={ScrollLink} to='landing' className='text-white'>
           Selam Beyene
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
