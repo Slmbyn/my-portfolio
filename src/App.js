@@ -10,6 +10,7 @@ import ready from './images/ready.jpg'
 // COMPONENT IMPORTS
 import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
+import AboutMe from './components/AboutMe';
 
 // CSS IMPORTS
 import './styles/App.css';
@@ -38,7 +39,7 @@ function App() {
       <Parallax strength={600} bgImage={beach}>
         <div className='content'>
           <div className='about'>
-            Blur Parallax
+            <AboutMe />
           </div>
         </div>
       </Parallax>
