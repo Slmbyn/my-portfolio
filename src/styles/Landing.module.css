@@ -33,25 +33,28 @@
 /* Mobile Styles */
 @media (max-width: 767px) {
     .heading {
-        margin-top: 0; /* Adjust as needed */
-        text-align: center; /* Center the text on mobile */
+        position: absolute;
+        bottom: 10px;
+        /* text-align: center; */
     }
 
-    .heading .name {
+    .name {
         font-size: 50px; /* Adjust font size for mobile */
-        margin-top: 10px; /* Add margin at the top */
-        margin-bottom: 10px; /* Add margin at the bottom */
+
+        /* margin-top: 10px;
+        margin-bottom: 10px;  */
     }
 
-    .heading .job {
+    .job {
         font-size: 30px; /* Adjust font size for mobile */
-        margin-bottom: 20px; /* Add more margin at the bottom */
+        /* margin-bottom: 20px; */
     }
 
     .headshotcontainer {
-        position: static; /* Reset position for mobile */
-        width: 100%; /* Make the image full width on mobile */
-        text-align: center; /* Center the image on mobile */
+        position: absolute;
+        width: 20em; /* Make the image full width on mobile */
+        right: 12vw;
+        /* left: 5vw; */
     }
 }
 
