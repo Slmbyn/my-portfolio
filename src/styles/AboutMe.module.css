@@ -1,0 +1,26 @@
+.aboutMeContainer {
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+    max-width: 50%;
+    height: 65vh;
+    padding: 40px;
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for text */
+}
+
+.textContainer {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for text */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Add some border radius for a rounded look */
+}
+
+.aboutMe {
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+.aboutMeText {
+    font-size: 30px;
+}
