@@ -19,7 +19,7 @@ export default function Projects() {
     const projectInfo = [
         { title: 'StratTester',
           description: 'A web application that helps stock traders test and analyze data from various trading strategies.', 
-          imageSrc: 'src/images/strattester.png', 
+          imageSrc:'../images/strattester.jpg', 
           github: 'https://github.com/Slmbyn/strattester',
           techStack: [<FaPython />, <IoLogoJavascript />, <SiDjango />, <FaReact />,<DiPostgresql />, <FaBootstrap/>],
         },

@@ -1,0 +1,58 @@
+.heading {
+    top: 60vh;
+    left: 10vw;
+    position: absolute;
+}
+
+.name {
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.job {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+
+.headshotcontainer {
+    position: absolute;
+    top: 8vh; /* Adjust the top position as needed */
+    right: 5vw; /* Adjust the right position as needed */
+    width: 400px;
+}
+
+/* .headshot {
+    width: 30px;
+    height: auto;
+} */
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .heading {
+        margin-top: 0; /* Adjust as needed */
+        text-align: center; /* Center the text on mobile */
+    }
+
+    .heading .name {
+        font-size: 50px; /* Adjust font size for mobile */
+        margin-top: 10px; /* Add margin at the top */
+        margin-bottom: 10px; /* Add margin at the bottom */
+    }
+
+    .heading .job {
+        font-size: 30px; /* Adjust font size for mobile */
+        margin-bottom: 20px; /* Add more margin at the bottom */
+    }
+
+    .headshotcontainer {
+        position: static; /* Reset position for mobile */
+        width: 100%; /* Make the image full width on mobile */
+        text-align: center; /* Center the image on mobile */
+    }
+}
+
+
