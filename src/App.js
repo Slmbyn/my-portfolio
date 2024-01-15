@@ -8,6 +8,7 @@ import daytrade from './images/daytrade.jpg'
 import ready from './images/ready.jpg'
 import landingbackground from './images/landingbackground.jpg'
 import black from './images/black.jpg'
+import vsc from './images/vscodebg.jpg'
 
 // COMPONENT IMPORTS
 import Navbar from './components/Navbar';
@@ -45,7 +46,7 @@ function App() {
     {/* LANDING FOR SMALL SCREENS */}
     <span className='d-block d-md-none '>
       <Parallax 
-          strength={200} 
+          strength={350} 
           bgImage={landingbackground}
           bgImageStyle={{
             width: '100%',
@@ -71,7 +72,14 @@ function App() {
       </Parallax>
 
 {/* SKILLS */}
-      <Parallax strength={-200} bgImage={black}>
+      <Parallax 
+        strength={-200} 
+        bgImage={vsc}
+        bgImageStyle={{
+          width: '100%',
+          height: '100vh',
+        }}
+        >
         <div className='skillsContent'>
           <div className='skills'>
             <Skills />
