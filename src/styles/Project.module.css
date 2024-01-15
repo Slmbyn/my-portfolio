@@ -1,13 +1,23 @@
 .project-card {
     transition: transform 0.6s, box-shadow 0.3s;
-  }
+}
   
-  .project-card:hover {
-    transform: scale(1.01);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
-  }
-  
-  .project-card.hovered {
-    background: rgba(0, 0, 0, 0.923);
-  }
-  
+.project-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+.project-card.hovered {
+  background: rgba(0, 0, 0, 0.923);
+}
+
+.projectTitle {
+  font-size: 60px;
+  color: white;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+/* .cardsWrapper {
+  margin-left: ;
+} */

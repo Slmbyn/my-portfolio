@@ -10,6 +10,11 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import React, {useState} from 'react';
 import styles from '../styles/Project.module.css'
+import strattester from '../images/strattester.jpg'
+import fitforecast from '../images/fitforecast.png'
+import pushstart from '../images/pushstart.png'
+import snake from '../images/snake.png'
+
 
 {/* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" /> */}
 
@@ -19,26 +24,26 @@ export default function Projects() {
     const projectInfo = [
         { title: 'StratTester',
           description: 'A web application that helps stock traders test and analyze data from various trading strategies.', 
-          imageSrc:'../images/strattester.jpg', 
+          imageSrc: strattester, 
           github: 'https://github.com/Slmbyn/strattester',
           techStack: [<FaPython />, <IoLogoJavascript />, <SiDjango />, <FaReact />,<DiPostgresql />, <FaBootstrap/>],
         },
         { title: 'PushStart', 
           description: 'PushStart is a full-stack CRUD application that seamlessly connects car buyers & sellers.', 
-          imageSrc: '/pushstart.png', 
+          imageSrc: pushstart, 
           github: 'https://github.com/Slmbyn/PushStart',
           techStack: [<SiMongodb/>, <SiExpress />,<FaReact />, <FaNodeJs />, <IoLogoJavascript />]
         },
         { title: 'Fit-Forecast',
           description: 'Web application designed to enhance your well-being through personalized workout suggestions based on your local weather conditions.',
-          imageSrc: '/fitforecast.png', 
+          imageSrc: fitforecast, 
           github: 'https://github.com/Slmbyn/Fit-Forecast', 
           site:'https://fitforecast-dc33e66f392f.herokuapp.com/',
           techStack: [<SiMongodb/>, <SiExpress />,<FaReact />, <FaNodeJs />, <IoLogoJavascript />]
         },
         { title: 'Snake',
           description: 'Snake, the timeless arcade game, is back! In snake, players control a snake with never ending hunger as it navigates through a field in search of food!',
-          imageSrc: '/snake.png',
+          imageSrc: snake,
           github: 'https://github.com/Slmbyn/Snake',
           site:'https://snake-gilt-eta.vercel.app/',
           techStack: [<IoLogoJavascript />, <MdCss />, <TiHtml5 />]
@@ -47,10 +52,11 @@ export default function Projects() {
   return (
     <>
       <span className='text-center'>
-        <h1 className=' mb-4'>Projects</h1>
+        <h1 className={`${styles['projectTitle']}`}>PROJECTS</h1>
       </span>
       <Row xs={1} md={2} className="g-4">
         {projectInfo.map((card, idx) => (
+          <span className={`${styles['cardsWrapper']}`}>
           <Col key={idx} className="mb-3">
             {/* <span className="mb-5"> */}
             <Card
@@ -70,6 +76,7 @@ export default function Projects() {
             </Card>
             {/* </span> */}
           </Col>
+          </span>
         ))}
       </Row>
     </>

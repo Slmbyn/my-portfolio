@@ -80,8 +80,8 @@ function App() {
       </Parallax>
 
 {/* Projects */}
-      <Parallax strength={200} bgImage={ready}>
-        <div className='content'>
+      <Parallax strength={200} bgImage={landingbackground}>
+        <div className='projectsContent'>
           <div className='projects'>
             <Projects />
           </div>
