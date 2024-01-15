@@ -1,0 +1,23 @@
+.skillsSectionWrapper {
+    color: white;
+    text-align: center;
+}
+
+.programmingSkills {
+    margin-top: 5vh;
+    font-size: 60px;
+}
+
+.languages, .frameworks {
+    font-size: 40px;
+    margin-bottom: 3vh;
+    text-decoration: underline;
+}
+
+.languageList, .frameworkList {
+    font-size: 25px;
+}
+
+.languageItem, .frameworkItem {
+    margin-bottom: 1vh;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/AboutMe.module.css'; // Create a CSS module for styling
+import styles from '../styles/AboutMe.module.css';
 import { Col } from 'react-bootstrap';
 
 export default function AboutMe() {

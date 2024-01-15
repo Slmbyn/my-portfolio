@@ -7,6 +7,7 @@ import beach from './images/beach.jpg'
 import daytrade from './images/daytrade.jpg'
 import ready from './images/ready.jpg'
 import landingbackground from './images/landingbackground.jpg'
+import black from './images/black.jpg'
 
 // COMPONENT IMPORTS
 import Navbar from './components/Navbar';
@@ -70,8 +71,8 @@ function App() {
       </Parallax>
 
 {/* SKILLS */}
-      <Parallax strength={-200} bgImage={ready}>
-        <div className='content'>
+      <Parallax strength={-200} bgImage={black}>
+        <div className='skillsContent'>
           <div className='skills'>
             <Skills />
           </div>

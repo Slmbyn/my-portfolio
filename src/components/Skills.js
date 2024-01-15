@@ -6,6 +6,7 @@ import { DiPostgresql } from "react-icons/di";
 import { SiDjango, SiMiro, SiNextdotjs, SiExpress, SiMongodb } from "react-icons/si";
 import { BiCoinStack } from "react-icons/bi";
 import { Row, Col } from "react-bootstrap";
+import styles from '../styles/Skills.module.css';
 
 export default function Skills() {
     const languages = [
@@ -33,24 +34,32 @@ export default function Skills() {
     ];
 
     return (
-        <>
-        <h2>Programming Skills</h2>
+        <span className={`${styles['skillsSectionWrapper']}`}>
+        <h2 className={`${styles['programmingSkills']}`}>Programming Skills</h2>
         <Row xs={2} md={2}>
             <Col md={6}>
-                <h2>Languages</h2>
-                {languages.map((language, idx) => (
-                    <span key={idx}>
-                        <div>{language.icon} {language.name}</div>
+                <span className={`${styles['languageWrapper']}`}>
+                    <h2 className={`${styles['languages']}`}>Languages</h2>
+                    <span className={`${styles['languageList']}`}>
+                        {languages.map((language, idx) => (
+                            <span key={idx}>
+                                <div className={`${styles['languageItem']}`}>{language.icon} {language.name}</div>
+                            </span>
+                        ))}
                     </span>
-                ))}
+                </span>
             </Col>
             <Col md={6}>
-                <h2>Frameworks</h2>
-                {frameworks.map((framework, idx) => (
-                    <span key={idx}>
-                        <div>{framework.icon} {framework.name}</div>
+                <span className={`${styles['frameworkWrapper']}`}>
+                    <h2 className={`${styles['frameworks']}`}>Frameworks</h2>
+                    <span className={`${styles['frameworkList']}`}>
+                        {frameworks.map((framework, idx) => (
+                            <span key={idx}>
+                                <div className={`${styles['frameworkItem']}`}>{framework.icon} {framework.name}</div>
+                            </span>
+                        ))}
                     </span>
-                ))}
+                </span>
             </Col>
             {/* <Col>
                 <h2>Tools</h2>
@@ -61,6 +70,6 @@ export default function Skills() {
                 ))}
             </Col> */}
         </Row>
-        </>
+        </span>
     );
 }
