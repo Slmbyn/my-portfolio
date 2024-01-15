@@ -12,10 +12,10 @@
 }
 
 .projectTitle {
-  font-size: 60px;
+  /* font-size: 60px; */
   color: white;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
+  margin-top: 6vh;
+  margin-bottom: 10vh;
 }
 
 /* .cardsWrapper {

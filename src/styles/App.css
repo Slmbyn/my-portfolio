@@ -15,5 +15,20 @@
 }
 
 .skillsContent {
-  height: 60vh;
+  height: 55vh;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 25px;
+  font-family: "Fauna One", serif;
+  font-weight: 400;
+  font-style: normal;
 }

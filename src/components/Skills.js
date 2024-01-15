@@ -35,7 +35,7 @@ export default function Skills() {
 
     return (
         <span className={`${styles['skillsSectionWrapper']}`}>
-        <h2 className={`${styles['programmingSkills']}`}>Programming Skills</h2>
+        {/* <h2 className={`${styles['programmingSkills']}`}>Programming Skills</h2> */}
         <Row xs={2} md={2}>
             <Col md={6}>
                 <span className={`${styles['languageWrapper']}`}>

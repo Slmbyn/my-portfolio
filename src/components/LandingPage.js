@@ -16,7 +16,7 @@ export default function LandingPage() {
       </div>
       <div className={`${styles['heading']}`}>
         <h1 className={`${styles['name']}`}>SELAM BEYENE</h1>
-        <h1 className={`${styles['job']}`}>Full-Stack Software Engineer</h1>
+        <h2 className={`${styles['job']}`}>Full-Stack Software Engineer</h2>
       </div>
     </Container>
   );

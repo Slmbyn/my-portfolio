@@ -8,7 +8,7 @@ export default function AboutMe() {
         <Col>
             <div className={`${styles.aboutMeContainer} rounded-4 `}>
                 <div>
-                    <h3 className={`${styles['aboutMe']}`}>About Me</h3>
+                    <h1 className={`${styles['aboutMe']}`}>About Me</h1>
                     <div className={`${styles['aboutMeText']}`}>
                         <p>Hey there! I&apos;m Selam, and my journey into software development has been a bit of a zig-zag...</p>
                         <p>Beyond the professional stuff, I love to socialize, travel, and can chat for hours about the Golden State Warriors and football. Fun fact? Just clinched my first-ever fantasy football league championship!

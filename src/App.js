@@ -77,7 +77,7 @@ function App() {
         bgImage={vsc}
         bgImageStyle={{
           width: '100%',
-          height: '100vh',
+          height: '90vh',
         }}
         >
         <div className='skillsContent'>
