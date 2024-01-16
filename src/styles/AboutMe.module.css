@@ -3,10 +3,7 @@
     top: 10vh;
     left: 5vw;
     max-width: 50%;
-    height: 65vh;
-    padding: 40px;
-    color: white; /* Text color */
-    background-color: rgba(0, 0, 0, 0.764); /* Semi-transparent black background for text */
+     /* Semi-transparent black background for text */
 }
 
 .textContainer {
@@ -17,6 +14,9 @@
     /* font-size: 100px; */
     text-align: center;
     margin-bottom: .5em;
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.764);
+    border-radius: 20px;
 }
 
 .aboutMeText {
@@ -25,4 +25,10 @@
     font-family: "Fauna One", serif;
     font-weight: 100;
     font-style: normal;
+    /* height: 65vh; */
+    padding: 40px;
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.764);
+    margin-bottom: 1em;
+    border-radius: 20px;
 }
