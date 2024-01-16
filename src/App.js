@@ -31,8 +31,8 @@ function App() {
 {/* LANDING */}
     <span className='d-none d-md-block '>
       <Parallax 
-        strength={200} 
-        bgImage={landingbackground}
+        strength={600} 
+        bgImage={starbg}
         bgImageStyle={{
           width: '100%',
           height: '100vh',
