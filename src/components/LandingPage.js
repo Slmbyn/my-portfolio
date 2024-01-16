@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import styles from '../styles/Landing.module.css';
 import headshotImage from '../images/headshot.jpg';
+import profilePic from '../images/green-profile.jpg';
 
 export default function LandingPage() {
   return (
@@ -9,9 +10,9 @@ export default function LandingPage() {
     <Container>
       <div className={`${styles['headshotcontainer']}`}>
         <img
-          src={headshotImage}
+          src={profilePic}
           alt='Headshot'
-          className='headshot img-fluid'
+          className='headshot img-fluid img-thumbnail'
         />
       </div>
       <div className={`${styles['heading']}`}>
