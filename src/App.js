@@ -9,6 +9,8 @@ import ready from './images/ready.jpg'
 import landingbackground from './images/landingbackground.jpg'
 import black from './images/black.jpg'
 import vsc from './images/vscodebg.jpg'
+import fullVsc from './images/fullvscbg.png'
+import starbg from './images/starbg.png'
 
 // COMPONENT IMPORTS
 import Navbar from './components/Navbar';
@@ -73,11 +75,11 @@ function App() {
 
 {/* SKILLS */}
       <Parallax 
-        strength={-200} 
-        bgImage={vsc}
+        strength={-350} 
+        bgImage={starbg}
         bgImageStyle={{
           width: '100%',
-          height: '90vh',
+          height: '100vh',
         }}
         >
         <div className='skillsContent'>
@@ -88,7 +90,7 @@ function App() {
       </Parallax>
 
 {/* Projects */}
-      <Parallax strength={200} bgImage={landingbackground}>
+      <Parallax strength={200} bgImage={fullVsc} bgImageStyle={{width: '100%', height: '90%'}}>
         <div className='projectsContent'>
           <div className='projects'>
             <Projects />
