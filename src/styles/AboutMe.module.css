@@ -2,7 +2,8 @@
     position: absolute;
     top: 10vh;
     left: 5vw;
-    max-width: 50%;
+    right: 50vw;
+    /* max-width: 50%; */
      /* Semi-transparent black background for text */
 }
 
