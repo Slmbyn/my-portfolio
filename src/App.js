@@ -75,7 +75,7 @@ function App() {
 
 {/* SKILLS */}
       <Parallax 
-        strength={-350} 
+        strength={-250} 
         bgImage={starbg}
         bgImageStyle={{
           width: '100%',

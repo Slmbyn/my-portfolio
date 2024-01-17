@@ -2,8 +2,7 @@
     position: absolute;
     top: 10vh;
     left: 5vw;
-    right: 50vw;
-    /* max-width: 50%; */
+    max-width: 50%;
      /* Semi-transparent black background for text */
 }
 
@@ -21,7 +20,7 @@
 }
 
 .aboutMeText {
-    font-size: 30px;
+    font-size: 20px;
     /* font-size: 25px; */
     font-family: "Fauna One", serif;
     font-weight: 100;
