@@ -15,9 +15,9 @@ export default function CustomNavbar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" className='navbar-toggler mx-2 ' />
         <Navbar.Collapse id="responsive-navbar-nav" className='text-right mx-3 '>
           <Nav className="me-auto">
-            {/* <Nav.Link as={ScrollLink} to='about'>About</Nav.Link>
+            <Nav.Link as={ScrollLink} to='about'>About</Nav.Link>
             <Nav.Link as={ScrollLink} to='skills'>Skills</Nav.Link>
-            <Nav.Link as={ScrollLink} to='projects'>Projects</Nav.Link> */}
+            <Nav.Link as={ScrollLink} to='projects'>Projects</Nav.Link>
             {/* <Nav.Link as={ScrollLink} to='contact'>Contact Me</Nav.Link> */}
           </Nav>
           <Nav>
