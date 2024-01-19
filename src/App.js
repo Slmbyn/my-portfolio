@@ -1,6 +1,8 @@
 // LIBRARY IMPORTS
 import { Parallax } from 'react-parallax';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link as ScrollLink } from 'react-scroll';
+
 
 // IMAGE IMPORTS
 import beach from './images/beach.jpg'
@@ -23,6 +25,7 @@ import Projects from './components/Projects';
 
 // CSS IMPORTS
 import './styles/App.css';
+import { Container } from 'react-bootstrap';
 
 function App() {
   return (
@@ -68,7 +71,7 @@ function App() {
       <span className='d-none d-md-block '>
         <Parallax strength={600} bgImage={beach}>
           <div className='content'>
-            <div className='about'>
+            <div className='about' id='about'>
               <AboutMe />
             </div>
           </div>
@@ -77,11 +80,13 @@ function App() {
 {/* aboutme for mobile screen */}
       <span className='d-block d-md-none' style={{height:'75vh'}}>
         <Parallax strength={600} bgImage={sunset}>
-          <div className='content'>
-            <div className='about'>
-              <AboutMe />
+          {/* <Container id='about'> */}
+            <div className='content'>
+              <div className='about' id='about'>
+                <AboutMe />
+              </div>
             </div>
-          </div>
+          {/* </Container> */}
         </Parallax>
       </span>
 
@@ -95,11 +100,13 @@ function App() {
           height: '100vh',
         }}
         >
-        <div className='skillsContent'>
-          <div className='skills'>
-            <Skills />
+        <Container id='skills'>
+          <div className='skillsContent'>
+            <div className='skills' id='skills'>
+              <Skills />
+            </div>
           </div>
-        </div>
+        </Container>
       </Parallax>
 </span>
 {/* skills for mobile screen */}
@@ -107,15 +114,17 @@ function App() {
       <Parallax 
         strength={-250} 
         bgImage={starbg}
-          bgImageStyle={{
-            backgroundSize: 'cover'
-          }}
+        bgImageStyle={{
+          backgroundSize: 'cover'
+        }}
         >
-        <div className='skillsContent'>
-          <div className='skills'>
-            <Skills />
+        <Container id='skills'>
+          <div className='skillsContent'>
+            <div className='skills' id='skills'>
+              <Skills />
+            </div>
           </div>
-        </div>
+        </Container>
       </Parallax>
 </span>
 
@@ -123,7 +132,7 @@ function App() {
       <span className='d-none d-md-block '>
         <Parallax strength={200} bgImage={fullVsc} bgImageStyle={{width: '100%', height: '90%'}}>
           <div className='projectsContent'>
-            <div className='projects'>
+            <div className='projects' id='projects'>
               <Projects />
             </div>
           </div>
@@ -134,7 +143,7 @@ function App() {
       <span className='d-block d-md-none'>
       <Parallax strength={200} bgImage={black} bgImageStyle={{width: '100%', height: '90%'}}>
         <div className='projectsContent'>
-          <div className='projects'>
+          <div className='projects' id='projects'>
             <Projects />
           </div>
         </div>
