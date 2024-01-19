@@ -51,9 +51,7 @@ function App() {
           strength={350} 
           bgImage={starbg}
           bgImageStyle={{
-            width: '100%',
-            height: '100%',
-            // backgroundSize: '100%'
+            backgroundSize: 'cover'
           }}
       >
         <div className='content'>
@@ -120,13 +118,26 @@ function App() {
 </span>
 
 {/* Projects */}
-      <Parallax strength={200} bgImage={fullVsc} bgImageStyle={{width: '100%', height: '90%'}}>
+      <span className='d-none d-md-block '>
+        <Parallax strength={200} bgImage={fullVsc} bgImageStyle={{width: '100%', height: '90%'}}>
+          <div className='projectsContent'>
+            <div className='projects'>
+              <Projects />
+            </div>
+          </div>
+        </Parallax>
+      </span>
+
+      {/* mobile screen */}
+      <span className='d-block d-md-none'>
+      <Parallax strength={200} bgImage={black} bgImageStyle={{width: '100%', height: '90%'}}>
         <div className='projectsContent'>
           <div className='projects'>
             <Projects />
           </div>
         </div>
       </Parallax>
+      </span>
 
     </div>
   );
