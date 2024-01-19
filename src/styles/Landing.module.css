@@ -32,30 +32,32 @@
 
 /* Mobile Styles */
 @media (max-width: 767px) {
-    .heading {
+    /* .headshotcontainer img{ */
+        /* display: flex;
+        justify-content: center; */
+        /* width: 100%; */
+        /* margin: 0 auto; */
+    /* } */
+
+    /* .heading {
         position: absolute;
         bottom: 10px;
-        /* text-align: center; */
     }
 
     .name {
-        font-size: 50px; /* Adjust font size for mobile */
+        font-size: 50px;
 
-        /* margin-top: 10px;
-        margin-bottom: 10px;  */
     }
 
     .job {
-        font-size: 30px; /* Adjust font size for mobile */
-        /* margin-bottom: 20px; */
+        font-size: 30px; 
     }
 
     .headshotcontainer {
-        position: absolute;
-        width: 20em; /* Make the image full width on mobile */
-        right: 12vw;
-        /* left: 5vw; */
-    }
+        display: flex;
+        justify-items: center;
+        width: 20rem; 
+    } */
 }
 
 

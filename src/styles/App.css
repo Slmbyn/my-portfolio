@@ -2,7 +2,7 @@
   height: 100vh;
 }
 
-.text-content {
+/* .text-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -12,19 +12,19 @@
   color: white;
   border-radius: 20px;
   font-size: 50px;
-}
+} */
 
 .skillsContent {
   height: 55vh;
 }
 
-h1 {
+/* h1 {
   font-size: 100px;
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-}
+} */
 
 h2 {
   font-size: 25px;

@@ -49,11 +49,11 @@ function App() {
     <span className='d-block d-md-none '>
       <Parallax 
           strength={350} 
-          bgImage={landingbackground}
+          bgImage={starbg}
           bgImageStyle={{
             width: '100%',
             height: '100%',
-            backgroundSize: 'contain'
+            // backgroundSize: '100%'
           }}
       >
         <div className='content'>
