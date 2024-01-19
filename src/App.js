@@ -11,6 +11,8 @@ import black from './images/black.jpg'
 import vsc from './images/vscodebg.jpg'
 import fullVsc from './images/fullvscbg.png'
 import starbg from './images/starbg.png'
+import sunset from './images/sunset.png'
+import beachfootball from './images/beachfootball.png'
 
 // COMPONENT IMPORTS
 import Navbar from './components/Navbar';
@@ -74,7 +76,7 @@ function App() {
       </span>
 {/* aboutme for mobile screen */}
       <span className='d-block d-md-none' style={{height:'75vh'}}>
-        <Parallax strength={600} bgImage={beach}>
+        <Parallax strength={600} bgImage={sunset}>
           <div className='content'>
             <div className='about'>
               <AboutMe />
