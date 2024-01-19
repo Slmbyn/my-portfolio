@@ -46,7 +46,7 @@ function App() {
       </Parallax>
     </span>
     {/* LANDING FOR SMALL SCREENS */}
-    <span className='d-block d-md-none '>
+    <span className='d-block d-md-none' style={{height:'95vh'}}>
       <Parallax 
           strength={350} 
           bgImage={starbg}
@@ -65,13 +65,25 @@ function App() {
     </span>
 
 {/* ABOUT ME */}
-      <Parallax strength={600} bgImage={beach}>
-        <div className='content'>
-          <div className='about'>
-            <AboutMe />
+      <span className='d-none d-md-block '>
+        <Parallax strength={600} bgImage={beach}>
+          <div className='content'>
+            <div className='about'>
+              <AboutMe />
+            </div>
           </div>
-        </div>
-      </Parallax>
+        </Parallax>
+      </span>
+{/* aboutme for mobile screen */}
+      <span className='d-block d-md-none' style={{height:'75vh'}}>
+        <Parallax strength={600} bgImage={beach}>
+          <div className='content'>
+            <div className='about'>
+              <AboutMe />
+            </div>
+          </div>
+        </Parallax>
+      </span>
 
 {/* SKILLS */}
       <Parallax 

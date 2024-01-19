@@ -21,7 +21,7 @@ export default function LandingPage() {
         <h2 className={`${styles['job']}`}>Full-Stack Software Engineer</h2>
       </div>
     </div>
-
+{/* mobile screen */}
     <div className='d-block d-md-none'>
       <div className='d-flex justify-content-center mt-5 '>
         <img
