@@ -86,6 +86,7 @@ function App() {
       </span>
 
 {/* SKILLS */}
+<span className='d-none d-md-block '>
       <Parallax 
         strength={-250} 
         bgImage={starbg}
@@ -100,6 +101,23 @@ function App() {
           </div>
         </div>
       </Parallax>
+</span>
+<span className='d-block d-md-none' style={{height:'45vh'}}>
+      <Parallax 
+        strength={-250} 
+        bgImage={starbg}
+        bgImageStyle={{
+          width: '100%',
+          height: '100vh',
+        }}
+        >
+        <div className='skillsContent'>
+          <div className='skills'>
+            <Skills />
+          </div>
+        </div>
+      </Parallax>
+</span>
 
 {/* Projects */}
       <Parallax strength={200} bgImage={fullVsc} bgImageStyle={{width: '100%', height: '90%'}}>

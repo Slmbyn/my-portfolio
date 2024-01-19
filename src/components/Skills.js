@@ -34,42 +34,88 @@ export default function Skills() {
     ];
 
     return (
-        <span className={`${styles['skillsSectionWrapper']}`}>
-        {/* <h2 className={`${styles['programmingSkills']}`}>Programming Skills</h2> */}
-        <Row xs={2} md={2}>
-            <Col md={6}>
-                <span className={`${styles['languageWrapper']}`}>
-                    <h2 className={`${styles['languages']}`}>Languages</h2>
-                    <span className={`${styles['languageList']}`}>
-                        {languages.map((language, idx) => (
-                            <span key={idx}>
-                                <div className={`${styles['languageItem']}`}>{language.icon} {language.name}</div>
-                            </span>
-                        ))}
+        <>
+        <span className='d-none d-md-block'>
+            <span className={`${styles['skillsSectionWrapper']}`}>
+            {/* <h2 className={`${styles['programmingSkills']}`}>Programming Skills</h2> */}
+            <Row xs={2} md={2}>
+                <Col md={6}>
+                    <span className={`${styles['languageWrapper']}`}>
+                        <h2 className={`${styles['languages']}`}>Languages</h2>
+                        <span className={`${styles['languageList']}`}>
+                            {languages.map((language, idx) => (
+                                <span key={idx}>
+                                    <div className={`${styles['languageItem']}`}>{language.icon} {language.name}</div>
+                                </span>
+                            ))}
+                        </span>
                     </span>
-                </span>
-            </Col>
-            <Col md={6}>
-                <span className={`${styles['frameworkWrapper']}`}>
-                    <h2 className={`${styles['frameworks']}`}>Frameworks</h2>
-                    <span className={`${styles['frameworkList']}`}>
-                        {frameworks.map((framework, idx) => (
-                            <span key={idx}>
-                                <div className={`${styles['frameworkItem']}`}>{framework.icon} {framework.name}</div>
-                            </span>
-                        ))}
+                </Col>
+                <Col md={6}>
+                    <span className={`${styles['frameworkWrapper']}`}>
+                        <h2 className={`${styles['frameworks']}`}>Frameworks</h2>
+                        <span className={`${styles['frameworkList']}`}>
+                            {frameworks.map((framework, idx) => (
+                                <span key={idx}>
+                                    <div className={`${styles['frameworkItem']}`}>{framework.icon} {framework.name}</div>
+                                </span>
+                            ))}
+                        </span>
                     </span>
-                </span>
-            </Col>
-            {/* <Col>
-                <h2>Tools</h2>
-                {tools.map((tool, idx) => (
-                    <span key={idx}>
-                        <div>{tool.icon} {tool.name}</div>
-                    </span>
-                ))}
-            </Col> */}
-        </Row>
+                </Col>
+                {/* <Col>
+                    <h2>Tools</h2>
+                    {tools.map((tool, idx) => (
+                        <span key={idx}>
+                            <div>{tool.icon} {tool.name}</div>
+                        </span>
+                    ))}
+                </Col> */}
+            </Row>
+            </span>
         </span>
+
+        <span className='d-block d-md-none'>
+            <span className="text-white text-center">
+                <h1 
+                    className="mt-4"
+                    style={{fontSize: '40px'}}
+                    >
+                        Skills
+                    </h1>
+                <div 
+                    className="mt-3 mb-5 "
+                    style={{
+                        fontSize: '20px'
+                    }}
+                    >
+                <Row xs={2} md={2}>
+                    <Col md={6}>
+                        <span>
+                            <span>
+                                {languages.map((language, idx) => (
+                                    <span key={idx}>
+                                        <div>{language.icon} {language.name}</div>
+                                    </span>
+                                ))}
+                            </span>
+                        </span>
+                    </Col>
+                    <Col md={6}>
+                        <span>
+                            <span>
+                                {frameworks.map((framework, idx) => (
+                                    <span key={idx}>
+                                        <div>{framework.icon} {framework.name}</div>
+                                    </span>
+                                ))}
+                            </span>
+                        </span>
+                    </Col>
+                </Row>
+                </div>
+            </span>
+        </span>
+        </>
     );
 }
