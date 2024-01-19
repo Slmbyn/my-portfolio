@@ -2,15 +2,16 @@
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { Link as ScrollLink } from 'react-scroll';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import '../styles/Navbar.module.css'
 
 export default function CustomNavbar() {
   return (
     <Navbar bg="dark" variant="dark" expand="md" sticky="top">
       <Container>
-        <Navbar.Brand as={ScrollLink} to='landing' className='text-white'>
+      <Navbar.Brand as={ScrollLink} to='landing' className='navbar-brand text-white mx-3 '>
           Selam Beyene
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className='navbar-toggler mx-2 ' />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as={ScrollLink} to='about'>About</Nav.Link>
