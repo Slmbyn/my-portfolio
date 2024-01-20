@@ -6,9 +6,10 @@
      /* Semi-transparent black background for text */
 }
 
-.textContainer {
-    border-radius: 10px; /* Optional: Add some border radius for a rounded look */
-}
+/* .aboutMeWrapper {
+    display: flex;
+    justify-content: center;
+} */
 
 .aboutMe {
     /* font-size: 100px; */
@@ -16,19 +17,26 @@
     margin-bottom: .5em;
     color: white; /* Text color */
     background-color: rgba(0, 0, 0, 0.764);
-    border-radius: 20px;
+    border-radius: 5px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 35%;
+    padding-top: .1em;
+    padding-bottom: .1em;
 }
 
 .aboutMeText {
     font-size: 20px;
     /* font-size: 25px; */
-    font-family: "Fauna One", serif;
-    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
     font-style: normal;
     /* height: 65vh; */
-    padding: 40px;
+    padding: 30px;
     color: white; /* Text color */
     background-color: rgba(0, 0, 0, 0.764);
     margin-bottom: 1em;
-    border-radius: 20px;
+    border-radius: 5px;
 }
