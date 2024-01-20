@@ -69,7 +69,7 @@ function App() {
 
 {/* ABOUT ME */}
       <span className='d-none d-md-block '>
-        <Parallax strength={600} bgImage={beach}>
+        <Parallax strength={600} bgImage={sunset}>
           <div className='content'>
             <div className='about' id='about'>
               <AboutMe />
