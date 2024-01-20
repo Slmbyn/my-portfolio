@@ -110,7 +110,7 @@ function App() {
       </Parallax>
 </span>
 {/* skills for mobile screen */}
-<span className='d-block d-md-none' style={{height:'45vh'}}>
+<span className='d-block d-md-none' style={{height:'55vh'}}>
       <Parallax 
         strength={-250} 
         bgImage={starbg}

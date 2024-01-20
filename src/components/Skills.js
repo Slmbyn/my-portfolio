@@ -119,6 +119,17 @@ export default function Skills() {
                         </span>
                     </Col>
                 </Row>
+                <Row className="my-3">
+                    <span>
+                        <span>
+                            {tools.map((tool, idx) => (
+                                <span key={idx}>
+                                    <div>{tool.icon} {tool.name}</div>
+                                </span>
+                            ))}
+                        </span>
+                    </span>
+                </Row>
                 </div>
             </span>
         </span>
