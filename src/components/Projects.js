@@ -66,8 +66,8 @@ export default function Projects() {
             >
               <Card.Img variant="top" src={card.imageSrc} />
               <Card.Body>
-                <Card.Title>{card.title}&nbsp;{card.techStack}</Card.Title>
-                <Card.Text>{card.description}</Card.Text>
+                <Card.Title className={`${styles['cardTitle']}`}>{card.title}&nbsp;{card.techStack}</Card.Title>
+                <Card.Text className={`${styles['cardDescription']}`}>{card.description}</Card.Text>
                 <Card.Footer className='text-center bg-dark-subtle'>
                   <Card.Link href={card.github} target="_blank" >Github</Card.Link>
                   {card.site ? <Card.Link href={card.site} target="_blank" >Visit Site</Card.Link> :''}
