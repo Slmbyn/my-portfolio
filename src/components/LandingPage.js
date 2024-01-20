@@ -8,7 +8,7 @@ export default function LandingPage() {
   return (
     // <Container className='text-white d-flex align-items-center justify-content-start'>
     <>
-    <div className='d-none d-md-block'>
+    <div className='d-none d-md-block landingWrapper'>
       <div className={`${styles['headshotcontainer']}`}>
         <img
           src={profilePic}
@@ -17,7 +17,9 @@ export default function LandingPage() {
         />
       </div>
       <div className={`${styles['heading']}`}>
-        <h1 className={`${styles['name']}`}>SELAM BEYENE</h1>
+        <div className='nameWrapper'>
+          <h1 className={`${styles['name']}`}>&nbsp;&nbsp;Selam Beyene&nbsp;&nbsp;</h1>
+        </div>
         <h2 className={`${styles['job']}`}>Full-Stack Software Engineer</h2>
       </div>
     </div>

@@ -69,7 +69,7 @@ function App() {
 
 {/* ABOUT ME */}
       <span className='d-none d-md-block '>
-        <Parallax strength={-600} bgImage={sunset}>
+        <Parallax strength={-400} bgImage={sunset}>
           <div className='content'>
             <div className='about' id='about'>
               <AboutMe />
@@ -93,7 +93,7 @@ function App() {
 {/* SKILLS */}
 <span className='d-none d-md-block '>
       <Parallax 
-        strength={-250} 
+        strength={250} 
         bgImage={starbg}
         bgImageStyle={{
           width: '100%',

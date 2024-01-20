@@ -1,28 +1,77 @@
+.landingWrapper {
+    display: grid;
+    grid-template-columns: 1fr; /* One column */
+    grid-template-rows: 3fr 1fr; /* First row is three times as high as the second row */
+}
+
+/* .landingWrapper > :first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .landingWrapper > :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } */
+
+
 .heading {
-    top: 60vh;
+    /* top: 35vh;
     left: 10vw;
-    position: absolute;
+    position: absolute; */
+    /* text-align: center; */
+    margin: auto; /* Center horizontally */
+    /* Optional: Center vertically if needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .name {
-    /* font-size: 100px; */
+    font-size: 80px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: rgb(255, 255, 255);
-    text-align: left;
+    /* text-align: center; */
     text-transform: uppercase;
-    font-weight: 200;
+    border-top: 1.5px solid white;
+    border-bottom: 1.5px solid white;
+    width: fit-content;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    /* font-size: 50px; */
 }
 
+
 .job {
-    font-size: 50px;
-    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 40px;
+    /* font-weight: 600; */
     color: white;
+    margin-top: .5em;
 }
 
 .headshotcontainer {
-    position: absolute;
-    top: 8vh; /* Adjust the top position as needed */
-    right: 5vw; /* Adjust the right position as needed */
-    width: 400px;
+    /* position: absolute;
+    top: 8vh;
+    right: 5vw; */
+    width: 300px;
+    margin: auto; /* Center horizontally */
+    /* Optional: Center vertically if needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 /* .headshot {
