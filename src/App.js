@@ -141,7 +141,7 @@ function App() {
 
       {/* mobile screen */}
       <span className='d-block d-md-none'>
-      <Parallax strength={200} bgImage={black} bgImageStyle={{width: '100%', height: '90%'}}>
+      <Parallax strength={-600} bgImage={sunset}>
         <div className='projectsContent'>
           <div className='projects' id='projects'>
             <Projects />
