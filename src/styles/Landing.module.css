@@ -81,32 +81,7 @@
 
 /* Mobile Styles */
 @media (max-width: 767px) {
-    /* .headshotcontainer img{ */
-        /* display: flex;
-        justify-content: center; */
-        /* width: 100%; */
-        /* margin: 0 auto; */
-    /* } */
 
-    /* .heading {
-        position: absolute;
-        bottom: 10px;
-    }
-
-    .name {
-        font-size: 50px;
-
-    }
-
-    .job {
-        font-size: 30px; 
-    }
-
-    .headshotcontainer {
-        display: flex;
-        justify-items: center;
-        width: 20rem; 
-    } */
 }
 
 

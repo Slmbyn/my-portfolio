@@ -51,7 +51,7 @@ function App() {
       </Parallax>
     </span>
     {/* LANDING FOR SMALL SCREENS */}
-    <span className='d-block d-md-none' style={{height:'95vh'}}>
+    <span className='d-block d-md-none' style={{height:'90vh'}}>
       <Parallax 
           strength={350} 
           bgImage={starbg}

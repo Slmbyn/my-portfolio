@@ -30,12 +30,12 @@ export default function LandingPage() {
           src={profilePic}
           alt='Headshot'
           className='headshot img-fluid img-thumbnail'
-          style={{width:'80%'}}
+          style={{width:'70%'}}
         />
       </div>
       <div className='text-white text-center mt-5 '>
         <h1 style={{fontSize:'50px'}}>SELAM BEYENE</h1>
-        <h2 className='mt-3' style={{fontSize:'30px'}}>Full-Stack Software Engineer</h2>
+        <h2 className='mt-3' style={{fontSize:'25px'}}>Full-Stack Software Engineer</h2>
       </div>
     </div>
     </>
