@@ -3,6 +3,16 @@
     text-align: center;
 }
 
+.skillsTitle {
+    margin-top: .5em;
+    margin-bottom: .5em;
+
+    font-size: 70px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .programmingSkills {
     margin-top: 5vh;
     font-size: 60px;
@@ -19,14 +29,16 @@
     /* text-decoration: underline; */
 }
 
-.languageList, .frameworkList {
-    font-size: 20px;
-    font-family: "Fauna One", serif;
-    font-weight: 400;
+.languageList, .frameworkList, .toolsList {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
     font-style: normal;
+    font-size: 30px;
+
 }
 
-.languageItem, .frameworkItem {
+.languageItem, .frameworkItem, .toolItem {
     margin-bottom: 1vh;
 }
 

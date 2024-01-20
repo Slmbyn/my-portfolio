@@ -29,7 +29,7 @@ export default function Projects() {
           techStack: [<FaPython />, <IoLogoJavascript />, <SiDjango />, <FaReact />,<DiPostgresql />, <FaBootstrap/>],
         },
         { title: 'PushStart', 
-          description: 'PushStart is a full-stack CRUD application that seamlessly connects car buyers & sellers.', 
+          description: 'PushStart is a full-stack CRUD application that seamlessly connects car buyers & sellers in a way that simplifies the car buying process.', 
           imageSrc: pushstart, 
           github: 'https://github.com/Slmbyn/PushStart',
           techStack: [<SiMongodb/>, <SiExpress />,<FaReact />, <FaNodeJs />, <IoLogoJavascript />]

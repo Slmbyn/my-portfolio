@@ -23,12 +23,12 @@ export default function Skills() {
         { name: 'Next.js', icon: <SiNextdotjs /> },
         { name: 'Node.js', icon: <FaNodeJs /> },
         { name: 'Express', icon: <SiExpress /> },
+    ];
+    
+    const tools = [
         { name: 'MongoDB', icon: <SiMongodb /> },
         { name: 'PostgreSQL', icon: <DiPostgresql /> },
         { name: 'Bootstrap', icon: <FaBootstrap /> },
-    ];
-
-    const tools = [
         { name: 'Figma', icon: <FaFigma /> },
         { name: 'Miro', icon: <SiMiro /> },
     ];
@@ -37,11 +37,13 @@ export default function Skills() {
         <>
         <span className='d-none d-md-block'>
             <span className={`${styles['skillsSectionWrapper']}`}>
-            {/* <h2 className={`${styles['programmingSkills']}`}>Programming Skills</h2> */}
+                <h1 className={`${styles['skillsTitle']}`}>
+                            SKILLS
+                </h1>
             <Row xs={2} md={2}>
-                <Col md={6}>
+                <Col md={4}>
                     <span className={`${styles['languageWrapper']}`}>
-                        <h2 className={`${styles['languages']}`}>Languages</h2>
+                        {/* <h2 className={`${styles['languages']}`}>Languages</h2> */}
                         <span className={`${styles['languageList']}`}>
                             {languages.map((language, idx) => (
                                 <span key={idx}>
@@ -51,9 +53,9 @@ export default function Skills() {
                         </span>
                     </span>
                 </Col>
-                <Col md={6}>
+                <Col md={4}>
                     <span className={`${styles['frameworkWrapper']}`}>
-                        <h2 className={`${styles['frameworks']}`}>Frameworks</h2>
+                        {/* <h2 className={`${styles['frameworks']}`}>Frameworks</h2> */}
                         <span className={`${styles['frameworkList']}`}>
                             {frameworks.map((framework, idx) => (
                                 <span key={idx}>
@@ -63,18 +65,22 @@ export default function Skills() {
                         </span>
                     </span>
                 </Col>
-                {/* <Col>
-                    <h2>Tools</h2>
-                    {tools.map((tool, idx) => (
-                        <span key={idx}>
-                            <div>{tool.icon} {tool.name}</div>
+                <Col md={4}>
+                    <span className={`${styles['toolsWrapper']}`}>
+                        <span className={`${styles['toolsList']}`}>
+                            {tools.map((tool, idx) => (
+                                <span key={idx}>
+                                    <div className={`${styles['toolItem']}`}>{tool.icon} {tool.name}</div>
+                                </span>
+                            ))}
                         </span>
-                    ))}
-                </Col> */}
+                    </span>
+                </Col>
             </Row>
             </span>
         </span>
 
+{/* MOBILE SCREEN */}
         <span className='d-block d-md-none'>
             <span className="text-white text-center">
                 <h1 
