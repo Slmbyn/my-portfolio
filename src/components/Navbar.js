@@ -22,35 +22,67 @@ export default function CustomNavbar() {
     <Nav.Link as={ScrollLink} to='projects'>Projects</Nav.Link>
     {/* <Nav.Link as={ScrollLink} to='contact'>Contact Me</Nav.Link> */}
   </Nav>
-  <Nav className="ml-auto d-flex align-items-center">
+  <Nav className="ml-auto d-flex justify-content-end">
+
     <a href='https://github.com/Slmbyn' rel="noopener noreferrer" target="_blank" className="nav-link ml-auto" style={{ color: 'white', textDecoration: 'none' }}>
       <FaGithub size={30} />
     </a>
+  <span className='d-flex align-items-center '>
     <a href='https://www.linkedin.com/in/selambeyene/' rel="noopener noreferrer" target="_blank" className="nav-link ml-auto" style={{ color: 'white', textDecoration: 'none' }}>
       <FaLinkedin size={30} />
     </a>
-    <a
-      href="https://drive.google.com/file/d/1_mhrRGCUAFffpMHjn2gm8RGv7JYcQQsy/view?usp=sharing"
-      target="_blank"
-      download
-      style={{
-        textDecoration: 'none',
-        color: 'rgb(25, 28, 31)',
-        background: 'rgb(255, 255, 255)',
-        borderRadius: '6px',
-        paddingTop: '2px',    // Top padding
-        paddingBottom: '2px', // Bottom padding
-        paddingRight: '8px',  // Right padding
-        paddingLeft: '8px',   // Left padding
-        fontWeight: 'bold',
-        display: 'inline-block',
-        height: '30px',
-        width: '80px',
-      }}
-      className="nav-link ml-auto"
-    >
-      Resume
-    </a>
+    <span className='d-none d-md-block'> {/* LARGE SCREEN */}
+      <a
+        href="https://drive.google.com/file/d/1_mhrRGCUAFffpMHjn2gm8RGv7JYcQQsy/view?usp=sharing"
+        target="_blank"
+        download
+        style={{
+          textDecoration: 'none',
+          color: 'rgb(25, 28, 31)',
+          background: 'rgb(255, 255, 255)',
+          borderRadius: '6px',
+          paddingTop: '2px',    // Top padding
+          paddingBottom: '2px', // Bottom padding
+          paddingRight: '8px',  // Right padding
+          paddingLeft: '8px',   // Left padding
+          fontWeight: 'bold',
+          display: 'inline-block',
+          height: '30px',
+          width: '80px',
+        }}
+        className="nav-link ml-2"
+      >
+        Resume
+      </a>
+    </span>
+  </span>
+  <span className='d-block d-md-none'> {/* SMALL SCREEN */}
+    {/* <div style={{ display: 'flex', justifyContent: 'flex-end' }}> */}
+      <a
+        href="https://drive.google.com/file/d/1_mhrRGCUAFffpMHjn2gm8RGv7JYcQQsy/view?usp=sharing"
+        target="_blank"
+        download
+        style={{
+          textDecoration: 'none',
+          color: 'rgb(25, 28, 31)',
+          background: 'rgb(255, 255, 255)',
+          borderRadius: '6px',
+          paddingTop: '2px',    // Top padding
+          paddingBottom: '2px', // Bottom padding
+          paddingRight: '8px',  // Right padding
+          paddingLeft: '8px',   // Left padding
+          fontWeight: 'bold',
+          display: 'inline-block',
+          height: '30px',
+          width: '80px',
+        }}
+        className="nav-link ms-auto mt-2 "
+      >
+        Resume
+      </a>
+    {/* </div> */}
+  </span>
+  
   </Nav>
 </Navbar.Collapse>
 
