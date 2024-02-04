@@ -57,6 +57,7 @@
     /* font-weight: 600; */
     color: white;
     margin-top: .5em;
+    margin-bottom: 1em;
 }
 
 .headshotcontainer {
@@ -71,7 +72,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 3em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 /* .headshot {

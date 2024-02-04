@@ -43,7 +43,7 @@ function App() {
           height: '100vh',
         }}
       >
-        <div className='content'>
+        <div className='landingContent'>
           <div className='landing'>
             <LandingPage />
           </div>
