@@ -29,13 +29,13 @@ export default function LandingPage() {
         <img
           src={profilePic}
           alt='Headshot'
-          className='headshot img-fluid img-thumbnail'
+          className='headshot img-fluid img-thumbnail mb-3 '
           style={{width:'70%'}}
         />
       </div>
       <div className='text-white text-center mt-5 '>
         <h1  
-          className='mx-3' 
+          className='mx-4 mb-3 py-2' 
           style={{
             fontSize:'45px',
             fontFamily:'"Lato", sans-serif',
