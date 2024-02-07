@@ -34,8 +34,21 @@ export default function LandingPage() {
         />
       </div>
       <div className='text-white text-center mt-5 '>
-        <h1 style={{fontSize:'50px'}}>SELAM BEYENE</h1>
-        <h2 className='mt-3' style={{fontSize:'25px'}}>Full-Stack Software Engineer</h2>
+        <h1  
+          className='mx-3' 
+          style={{
+            fontSize:'45px',
+            fontFamily:'"Lato", sans-serif',
+            fontWeight: '400',
+            borderTop: '1.7px solid white',
+            borderBottom: '1.7px solid white',
+          }}>SELAM BEYENE</h1>
+        <h2 
+          className='mt-3' 
+          style={{
+            fontSize:'25px',
+            fontFamily: '"Open Sans", sans-serif',
+          }}>Full-Stack Software Engineer</h2>
       </div>
     </div>
     </>
