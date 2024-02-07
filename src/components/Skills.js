@@ -95,50 +95,50 @@ export default function Skills() {
                         Skills
                     </h1>
                 <div 
-                    className="mt-3 mb-5 "
+                    className="mt-3 mb-5"
                     style={{
                         fontSize: '20px'
                     }}
-                    >
-                <Row xs={2} md={2}>
-                    <Col md={6}>
-                        <span>
+                >
+                    <Row xs={2} md={2}>
+                        <Col md={6}>
                             <span>
-                                {languages.map((language, idx) => (
-                                    <span key={idx}>
-                                        <div
-                                            style={{
-                                                fontFamily: '"Open Sans", sans-serif',
-                                            }}
-                                        >{language.icon} {language.name}</div>
-                                    </span>
-                                ))}
-                            </span>
-                        </span>
-                    </Col>
-                    <Col md={6}>
-                        <span>
-                            <span>
-                                {frameworks.map((framework, idx) => (
-                                    <span key={idx}>
-                                        <div>{framework.icon} {framework.name}</div>
-                                    </span>
-                                ))}
-                            </span>
-                        </span>
-                    </Col>
-                </Row>
-                <Row className="my-3">
-                    <span>
-                        <span>
-                            {tools.map((tool, idx) => (
-                                <span key={idx}>
-                                    <div>{tool.icon} {tool.name}</div>
+                                <span>
+                                    {languages.map((language, idx) => (
+                                        <span key={idx}>
+                                            <div
+                                                style={{
+                                                    fontFamily: '"Open Sans", sans-serif',
+                                                }}
+                                            >{language.icon} {language.name}</div>
+                                        </span>
+                                    ))}
                                 </span>
-                            ))}
+                            </span>
+                        </Col>
+                        <Col md={6}>
+                            <span>
+                                <span>
+                                    {frameworks.map((framework, idx) => (
+                                        <span key={idx}>
+                                            <div>{framework.icon} {framework.name}</div>
+                                        </span>
+                                    ))}
+                                </span>
+                            </span>
+                        </Col>
+                    </Row>
+                    <Row className="my-3">
+                        <span>
+                            <span>
+                                {tools.map((tool, idx) => (
+                                    <span key={idx}>
+                                        <div>{tool.icon} {tool.name}</div>
+                                    </span>
+                                ))}
+                            </span>
                         </span>
-                    </span>
-                </Row>
+                    </Row>
                 </div>
             </span>
         </span>
