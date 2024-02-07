@@ -30,7 +30,7 @@ export default function AboutMe() {
                         className='d-flex justify-content-center mt-5 text-center'
                         >
                         <h1 
-                            className='rounded py-2 mb-4 '
+                            className='rounded py-2 mb-3'
                             style={{
                                 // backgroundColor: 'rgba(0, 0, 0, 0.7)',
                                 // width:'50%'
