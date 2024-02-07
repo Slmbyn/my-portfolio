@@ -16,14 +16,15 @@ export default function CustomNavbar() {
 </Navbar.Brand>
 <Navbar.Toggle aria-controls="responsive-navbar-nav" className='navbar-toggler mx-2' />
 <Navbar.Collapse id="responsive-navbar-nav" className='text-right mx-3'>
-  <Nav className="me-auto">
-    <Nav.Link as={ScrollLink} to='about'>About</Nav.Link>
-    <Nav.Link as={ScrollLink} to='skills'>Skills</Nav.Link>
-    <Nav.Link as={ScrollLink} to='projects'>Projects</Nav.Link>
-    {/* <Nav.Link as={ScrollLink} to='contact'>Contact Me</Nav.Link> */}
-  </Nav>
+  <span className='d-none d-md-block'>
+    <Nav className="me-auto">
+      <Nav.Link as={ScrollLink} to='about'>About</Nav.Link>
+      <Nav.Link as={ScrollLink} to='skills'>Skills</Nav.Link>
+      <Nav.Link as={ScrollLink} to='projects'>Projects</Nav.Link>
+      {/* <Nav.Link as={ScrollLink} to='contact'>Contact Me</Nav.Link> */}
+    </Nav>
+  </span>
   <Nav className="ml-auto d-flex justify-content-end">
-
     <a href='https://github.com/Slmbyn' rel="noopener noreferrer" target="_blank" className="nav-link ml-auto" style={{ color: 'white', textDecoration: 'none' }}>
       <FaGithub size={30} />
     </a>
