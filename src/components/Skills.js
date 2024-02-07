@@ -85,7 +85,12 @@ export default function Skills() {
             <span className="text-white text-center">
                 <h1 
                     className="mt-4"
-                    style={{fontSize: '40px'}}
+                    style={{
+                        textTransform: 'uppercase',
+                        fontFamily:'"Lato", sans-serif',
+                        fontWeight: '400',
+                        fontSize: '55px'
+                    }}
                     >
                         Skills
                     </h1>
@@ -101,7 +106,11 @@ export default function Skills() {
                             <span>
                                 {languages.map((language, idx) => (
                                     <span key={idx}>
-                                        <div>{language.icon} {language.name}</div>
+                                        <div
+                                            style={{
+                                                fontFamily: '"Open Sans", sans-serif',
+                                            }}
+                                        >{language.icon} {language.name}</div>
                                     </span>
                                 ))}
                             </span>
