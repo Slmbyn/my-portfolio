@@ -78,7 +78,7 @@ function App() {
         </Parallax>
       </span>
 {/* aboutme for mobile screen */}
-      <span className='d-block d-md-none' style={{height:'75vh'}}>
+      <span className='d-block d-md-none' style={{height:'80vh'}}>
         <Parallax strength={600} bgImage={sunset}>
           {/* <Container id='about'> */}
             <div className='content'>
