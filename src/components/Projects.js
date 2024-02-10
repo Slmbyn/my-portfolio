@@ -29,7 +29,7 @@ export default function Projects() {
           techStack: [<FaPython />, <IoLogoJavascript />, <SiDjango />, <FaReact />,<DiPostgresql />, <FaBootstrap/>],
         },
         { title: 'PushStart', 
-          description: 'PushStart is a full-stack CRUD application that seamlessly connects car buyers & sellers in a way that simplifies the car buying process.', 
+        description: 'PushStart is a full-stack CRUD application that seamlessly connects car buyers & sellers in a way that simplifies the car buying process.', 
           imageSrc: pushstart, 
           github: 'https://github.com/Slmbyn/PushStart',
           site: 'https://pushstart-67af309d22a2.herokuapp.com/',
@@ -55,7 +55,7 @@ export default function Projects() {
       <span className='text-center'>
         <h1 className={`${styles['projectTitle']}`}>PROJECTS</h1>
       </span>
-      <Row xs={1} md={2} className="g-4">
+      <Row xs={1} md={2} className={`g-4 ${styles.centeredRow}`}>
         {projectInfo.map((card, idx) => (
           <span className={`${styles['cardsWrapper']}`}>
           <Col key={idx} className="mb-3">
