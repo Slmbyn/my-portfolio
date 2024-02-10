@@ -6,12 +6,12 @@ export default function AboutMe() {
     return (
         <>
             <div className='d-none d-md-block'>
-                <Col>
-                    <div className={`${styles.aboutMeContainer}`}>
-                        <div>
                             <div className='d-flex justify-content-center text-center'>
                                 <h1 className={`${styles['aboutMe']}`}>About Me</h1>
                             </div>
+                <Col>
+                    <div className={`${styles.aboutMeContainer}`}>
+                        <div>
                             <div className={`${styles['aboutMeText']}`}>
                                 <p>My journey into software development has been a bit of a zig-zag. Starting with a finance degree, I dove into the banking world, handling everything from lending to investments. I then took a detour into the wild world of day trading, learning the ropes on my own.</p>
                                 <p>I started learning Python with the idea that it would be a useful tool to help my trading, little did I know that I would become so enamored with it that I&apos;d complete an immersive software engineering bootcamp.</p>
