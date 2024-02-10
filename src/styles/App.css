@@ -13,6 +13,9 @@
   border-radius: 20px;
   font-size: 50px;
 } */
+.aboutContent {
+  height: 90vh;
+}
 
 .skillsContent {
   height: 65vh;
@@ -44,6 +47,11 @@ half-monitor: x844
 
 MONITOR: x1300
 */
+@media screen and (min-height: 840px) {
+  .aboutContent {
+    height: 65vh
+  }
+}
 
 @media screen and (min-height: 760px) {
   .skillsContent {
@@ -52,6 +60,6 @@ MONITOR: x1300
 }
 @media screen and (min-height: 1000px) {
   .skillsContent {
-    height: 45vh;
+    height: 40vh;
   }
 }
