@@ -43,7 +43,15 @@ half-monitor: x844
   landing vh should increase a little bit
 
 MONITOR: x1300
-
-
-
 */
+
+@media screen and (min-height: 760px) {
+  .skillsContent {
+    height: 55vh;
+  }
+}
+@media screen and (min-height: 1000px) {
+  .skillsContent {
+    height: 45vh;
+  }
+}
