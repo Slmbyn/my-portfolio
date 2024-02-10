@@ -34,7 +34,7 @@
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 100%;
+  font-size: 1em;
   /* white-space: nowrap; */
 }
 
@@ -50,7 +50,7 @@
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1320px) {
 
   .centeredRow {
     display: flex;
