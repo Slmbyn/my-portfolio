@@ -1,8 +1,9 @@
 .aboutMeContainer {
     position: absolute;
-    top: 10vh;
+    top: calc(5vh + 20px);
     left: 5vw;
-    max-width: 50%;
+    max-width: 50vw;
+    max-height: 50vh;
      /* Semi-transparent black background for text */
 }
 
@@ -31,7 +32,7 @@
 
 .aboutMeText {
     /* font-size: clamp(10px, 0.3043rem + 3.4783vw, 20px); */
-    font-size: 20px;
+    font-size: 1.2em;
     /* font-size: 25px; */
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -44,3 +45,28 @@
     margin-bottom: 1em;
     border-radius: 5px;
 }
+
+@media screen and (max-height: 670px) {
+    .aboutMeContainer {
+        top: calc(1vh + 0px); /* Adjust as needed */
+    }
+}
+
+@media screen and (max-height: 595px) {
+    .aboutMeContainer {
+        max-height: 30vh;
+    }
+
+    .aboutMeText {
+        font-size: .9em;
+    }
+} 
+@media screen and (max-width: 1330px) {
+    .aboutMeContainer {
+        max-height: 30vh;
+    }
+
+    .aboutMeText {
+        font-size: 1em;
+    }
+} 
