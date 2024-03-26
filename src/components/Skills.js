@@ -3,6 +3,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { TiHtml5 } from "react-icons/ti";
 import { IoLogoCss3 } from "react-icons/io";
 import { DiPostgresql } from "react-icons/di";
+import { SiPostman, SiJest, SiApache } from "react-icons/si";
 import { SiDjango, SiMiro, SiNextdotjs, SiExpress, SiMongodb } from "react-icons/si";
 import { BiCoinStack } from "react-icons/bi";
 import { Row, Col } from "react-bootstrap";
@@ -15,6 +16,7 @@ export default function Skills() {
         { name: 'HTML', icon: <TiHtml5 /> },
         { name: 'CSS', icon: <IoLogoCss3 /> },
         { name: 'SQL', icon: <BiCoinStack /> },
+        { name: 'jMeter', icon: <SiApache /> },
     ];
 
     const frameworks = [
@@ -23,6 +25,7 @@ export default function Skills() {
         { name: 'Next.js', icon: <SiNextdotjs /> },
         { name: 'Node.js', icon: <FaNodeJs /> },
         { name: 'Express', icon: <SiExpress /> },
+        { name: 'Jest', icon: <SiJest /> },
     ];
     
     const tools = [
@@ -31,6 +34,7 @@ export default function Skills() {
         { name: 'Bootstrap', icon: <FaBootstrap /> },
         { name: 'Figma', icon: <FaFigma /> },
         { name: 'Miro', icon: <SiMiro /> },
+        { name: 'Postman', icon: <SiPostman />},
     ];
 
     return (
